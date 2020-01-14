@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## EAAlert
 
-Copyright (c) 2020 emre-aydin-matriks <ea@ea.tc>
+Copyright (c) 2020 aydin-emre <ea@ea.tc>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

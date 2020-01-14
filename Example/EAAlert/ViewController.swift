@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  EAAlert
 //
-//  Created by emre-aydin-matriks on 01/14/2020.
-//  Copyright (c) 2020 emre-aydin-matriks. All rights reserved.
+//  Created by Emre AYDIN on 01/14/2020.
+//  Copyright (c) 2020 Emre AYDIN. All rights reserved
 //
 
 import UIKit
