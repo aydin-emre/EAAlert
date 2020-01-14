@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EAAlert_Example' do
+  pod 'EAAlert', :path => '../'
+
+  target 'EAAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
