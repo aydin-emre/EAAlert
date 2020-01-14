@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F0699EC815ED622D26515B1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3080E91F48DC87AF4E3AD2D9 /* EAAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EAAlert.podspec; path = ../EAAlert.podspec; sourceTree = "<group>"; };
+		1F0699EC815ED622D26515B1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3080E91F48DC87AF4E3AD2D9 /* EAAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EAAlert.podspec; path = ../EAAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		35C604D730A3A7FFF31AF546 /* Pods_EAAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* EAAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		780DF59B4DCF761E91A00177 /* Pods_EAAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82F22F2D4AE190D6FB97F87 /* Pods-EAAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlert_Example.release.xcconfig"; path = "Target Support Files/Pods-EAAlert_Example/Pods-EAAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AF777CFECD26EDC2B36B07E4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AF777CFECD26EDC2B36B07E4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CCF830773547450E5B8B6A8F /* Pods-EAAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlert_Tests.debug.xcconfig"; path = "Target Support Files/Pods-EAAlert_Tests/Pods-EAAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE10A40B469D3A882DCCDA3D /* Pods-EAAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlert_Example.debug.xcconfig"; path = "Target Support Files/Pods-EAAlert_Example/Pods-EAAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE10A717E3C11914A8382620 /* Pods-EAAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlert_Tests.release.xcconfig"; path = "Target Support Files/Pods-EAAlert_Tests/Pods-EAAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +147,6 @@
 				CCF830773547450E5B8B6A8F /* Pods-EAAlert_Tests.debug.xcconfig */,
 				DE10A717E3C11914A8382620 /* Pods-EAAlert_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

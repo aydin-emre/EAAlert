@@ -1,0 +1,6 @@
+framework module EAAlert {
+  umbrella header "EAAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

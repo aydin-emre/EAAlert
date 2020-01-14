@@ -1,0 +1,6 @@
+framework module Pods_EAAlert_Tests {
+  umbrella header "Pods-EAAlert_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

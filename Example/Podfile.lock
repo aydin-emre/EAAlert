@@ -1,0 +1,16 @@
+PODS:
+  - EAAlert (0.1.0)
+
+DEPENDENCIES:
+  - EAAlert (from `../`)
+
+EXTERNAL SOURCES:
+  EAAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EAAlert: 3988207d59bac90e76d15f3155ff3b69c6d2f37e
+
+PODFILE CHECKSUM: d210845af6a3498174b0c3e284869f2f24905dc6
+
+COCOAPODS: 1.9.0.beta.2
