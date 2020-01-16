@@ -84,12 +84,10 @@ alert.messageLabelColor = .lightText
 ```
 Set positive and negative buttons' text, font, and color
 ```swift
-alert.isPositiveButtonHidden = false
 alert.positiveButtonTextFont = UIFont.boldSystemFont(ofSize: 23)
 alert.positiveButtonTextColor = .white
 alert.positiveButtonText = "Ok"
 
-alert.isNegativeButtonHidden = false
 alert.negativeButtonTextFont = UIFont.boldSystemFont(ofSize: 23)
 alert.negativeButtonTextColor = .white
 alert.negativeButtonText = "Cancel"
