@@ -33,24 +33,23 @@ class ViewController: UIViewController {
         
         alert.closeButtonImage = UIImage(named: "close")
         alert.successButtonImage = UIImage(named: "tick")
-//        alert.messageType = .success
+        alert.messageType = .success
 
+        alert.blurEffectStyle = .dark
         alert.alertBackgroundColor = .black
 
         alert.messageLabelFont = UIFont.systemFont(ofSize: 20)
         alert.messageLabelColor = .lightText
-        
-//        alert.isPositiveButtonHidden = false
+
+        alert.isPositiveButtonHidden = false
         alert.positiveButtonTextFont = UIFont.boldSystemFont(ofSize: 23)
         alert.positiveButtonTextColor = .white
         alert.positiveButtonText = "Ok"
-        
-//        alert.isNegativeButtonHidden = false
+
+        alert.isNegativeButtonHidden = false
         alert.negativeButtonTextFont = UIFont.boldSystemFont(ofSize: 23)
         alert.negativeButtonTextColor = .white
         alert.negativeButtonText = "Cancel"
-        
-        alert.show()
     }
 
     @IBAction func showAlert(_ sender: UIButton) {

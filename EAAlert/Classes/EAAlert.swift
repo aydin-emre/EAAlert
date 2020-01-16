@@ -33,6 +33,9 @@ public class EAAlert: UIView {
         }
     }
     
+    /// blurEffectStyle: Blur effect style
+    public var blurEffectStyle = UIBlurEffect.Style.prominent
+    
     /// alertBackgroundColor: Backgroundcolor of alert view
     public var alertBackgroundColor = UIColor.white
     
@@ -123,7 +126,7 @@ public class EAAlert: UIView {
             if let window = UIApplication.shared.keyWindow {
                 let superview = UIView(frame: window.bounds)
                 if #available(iOS 10.0, *) {
-                    let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.prominent)
+                    let blurEffect = UIBlurEffect(style: self.blurEffectStyle)
                     let blurEffectView = UIVisualEffectView(effect: blurEffect)
                     blurEffectView.frame = window.bounds
                     blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
