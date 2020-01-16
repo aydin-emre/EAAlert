@@ -27,17 +27,17 @@ Firstly, import EAAlert to your project
 import EAAlert
 ```
 
-Defite EAAlert variable in global scope
+Define EAAlert variable in global scope
 ```swift
 var alert: EAAlert!
 ```
 Set the instance at viewDidLoad
 ```swift
-alert = EAAlert(message: "test message")
+alert = EAAlert(message: "Test message")
 ```
-You can set the message when needed with using setMessage function
+You can set the message with using setMessage function when you need
 ```swift
-alert.setMessage("updated message")
+alert.setMessage("Updated message")
 ```
 Set message type as success, error or none. There will be icons if success or error selected.
 ```swift
