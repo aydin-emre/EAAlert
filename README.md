@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/EAAlert.svg?style=flat)](https://cocoapods.org/pods/EAAlert)
 [![Platform](https://img.shields.io/cocoapods/p/EAAlert.svg?style=flat)](https://cocoapods.org/pods/EAAlert)
 
+![EAAlert example](https://i.ibb.co/NZnBwQz/screenshot1.png)
+![EAAlert example](https://i.ibb.co/WsZfd02/screenshot2.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
