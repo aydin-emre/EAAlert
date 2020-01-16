@@ -34,7 +34,7 @@ Define EAAlert variable in global scope
 ```swift
 var alert: EAAlert!
 ```
-Set the instance at viewDidLoad
+Set the instance in viewDidLoad
 ```swift
 alert = EAAlert(message: "Test message")
 ```
