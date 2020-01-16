@@ -49,7 +49,7 @@ alert.messageType = .success // .error or .none
 Set positive and negative button visibility
 ```swift
 alert.isPositiveButtonHidden = false // default true
-alert.isPositiveButtonHidden = false // default true
+alert.isNegativeButtonHidden = false // default true
 ```
 
 ## Click events
