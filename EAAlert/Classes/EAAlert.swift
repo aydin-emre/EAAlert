@@ -108,11 +108,11 @@ public class EAAlert: UIView {
     }
     
     public init() {
-        super.init(frame: (UIApplication.shared.delegate?.window??.bounds)!)
+        super.init(frame: CGRect.zero)
     }
     
     public init(message: String) {
-        super.init(frame: (UIApplication.shared.delegate?.window??.bounds)!)
+        super.init(frame: CGRect.zero)
         
         _message = message
     }
