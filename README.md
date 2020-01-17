@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/EAAlert.svg?style=flat)](https://cocoapods.org/pods/EAAlert)
 [![Platform](https://img.shields.io/cocoapods/p/EAAlert.svg?style=flat)](https://cocoapods.org/pods/EAAlert)
 
-![EAAlert example](https://i.ibb.co/NZnBwQz/screenshot1.png)
+![EAAlert example](https://i.ibb.co/qk96H0P/screenshot1.png)
 ![EAAlert example](https://i.ibb.co/WsZfd02/screenshot2.png)
 
 ## Example
