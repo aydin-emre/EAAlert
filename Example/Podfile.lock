@@ -1,5 +1,5 @@
 PODS:
-  - EAAlert (0.1.4)
+  - EAAlert (0.1.6)
 
 DEPENDENCIES:
   - EAAlert (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EAAlert: 74bbc0ae7e38d84f4342cf7dd8f88384093f843f
+  EAAlert: 41a255c1b0c9f17ae3ba455cf6a02d100dcf85bb
 
 PODFILE CHECKSUM: d210845af6a3498174b0c3e284869f2f24905dc6
 

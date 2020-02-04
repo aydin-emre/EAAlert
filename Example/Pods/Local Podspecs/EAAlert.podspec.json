@@ -1,6 +1,6 @@
 {
   "name": "EAAlert",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "summary": "EAAlert is a kind of customized alert view.",
   "description": "EAAlert is an alert view with blurred transparent background, which contains close listener and message type.",
   "homepage": "https://github.com/aydin-emre/EAAlert.git",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/aydin-emre/EAAlert.git",
-    "tag": "0.1.4"
+    "tag": "0.1.6"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "9.0"
   },
   "swift_versions": "5.0",
   "source_files": "EAAlert/Classes/**/*",
