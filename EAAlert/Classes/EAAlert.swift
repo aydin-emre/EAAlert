@@ -34,7 +34,7 @@ public class EAAlert: UIView {
     }
     
     /// blurEffectStyle: Blur effect style
-    public var blurEffectStyle = UIBlurEffect.Style.regular
+    public var blurEffectStyle = UIBlurEffect.Style.light
     
     /// alertBackgroundColor: Backgroundcolor of alert view
     public var alertBackgroundColor = UIColor.white
