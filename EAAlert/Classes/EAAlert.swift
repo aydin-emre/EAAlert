@@ -14,7 +14,7 @@ public enum MessageType: Int {
     case error
 }
 
-public class EAAlert: UIView {
+open class EAAlert: UIView {
     
     /// messageType: success, error or none. Changeable images available when success or error types selected.
     public var messageType = MessageType.none {
@@ -117,7 +117,7 @@ public class EAAlert: UIView {
         _message = message
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
