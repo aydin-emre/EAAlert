@@ -36,7 +36,12 @@ var alert: EAAlert!
 ```
 Set the instance in viewDidLoad
 ```swift
+alert = EAAlert()
 alert = EAAlert(message: "Test message")
+```
+To show alert
+```swift
+alert.show()
 ```
 You can set the message with using setMessage function when you need
 ```swift

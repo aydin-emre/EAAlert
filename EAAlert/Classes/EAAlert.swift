@@ -34,7 +34,7 @@ public class EAAlert: UIView {
     }
     
     /// blurEffectStyle: Blur effect style
-    public var blurEffectStyle = UIBlurEffect.Style.dark
+    public var blurEffectStyle = UIBlurEffect.Style.extraLight
     
     /// alertBackgroundColor: Backgroundcolor of alert view
     public var alertBackgroundColor = UIColor.white
@@ -133,8 +133,8 @@ public class EAAlert: UIView {
                     superview.addSubview(blurEffectView)
                 }
                 
-                let frame = message.getEstimatedFrame(self.messageLabelFont)
-                let height = frame.height
+                let labelWidth: CGFloat = 250
+                let labelHeight = message.getHeight(labelWidth, self.messageLabelFont)
                 let messageTypeIconHeight: CGFloat = (self.messageType == MessageType.none) ? 0 : 50
                 let isActionButtonsContainerViewVisible = !self.isPositiveButtonHidden || !self.isNegativeButtonHidden
                 let actionButtonsContainerViewHeight: CGFloat = isActionButtonsContainerViewVisible ? 36 : 0
@@ -155,7 +155,7 @@ public class EAAlert: UIView {
                     contentView.centerXAnchor.constraint(equalTo: superview.centerXAnchor),
                     contentView.centerYAnchor.constraint(equalTo: superview.centerYAnchor),
                     contentView.widthAnchor.constraint(greaterThanOrEqualToConstant: 300),
-                    contentView.heightAnchor.constraint(equalToConstant: height+messageTypeIconHeight+actionButtonsContainerViewHeight+72)
+                    contentView.heightAnchor.constraint(equalToConstant: labelHeight+messageTypeIconHeight+actionButtonsContainerViewHeight+144)
                     ])
                 
                 
@@ -171,8 +171,8 @@ public class EAAlert: UIView {
                 NSLayoutConstraint.activate([
                     label.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
                     label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: self.labelCenterYAnchor),
-                    label.widthAnchor.constraint(equalToConstant: 250),
-                    label.heightAnchor.constraint(equalToConstant: height)
+                    label.widthAnchor.constraint(equalToConstant: labelWidth),
+                    label.heightAnchor.constraint(equalToConstant: labelHeight)
                     ])
                 
                 
