@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// messageType: none, success or error.
 public enum MessageType: Int {
     case none = 0
     case success
@@ -16,7 +17,7 @@ public enum MessageType: Int {
 
 open class EAAlert: UIView {
     
-    /// messageType: success, error or none. Changeable images available when success or error types selected.
+    /// messageType: none, success or error. Changeable images available when success or error types selected.
     public var messageType = MessageType.none {
         didSet {
             switch messageType {
@@ -34,60 +35,60 @@ open class EAAlert: UIView {
     }
     
     /// blurEffectStyle: Blur effect style
-    public var blurEffectStyle = UIBlurEffect.Style.light
+    open var blurEffectStyle = UIBlurEffect.Style.light
     
     /// alertBackgroundColor: Backgroundcolor of alert view
-    public var alertBackgroundColor = UIColor.white
+    open var alertBackgroundColor = UIColor.white
     
     /// messageLabelFont: Font of message label
-    public var messageLabelFont = UIFont.systemFont(ofSize: 23)
+    open var messageLabelFont = UIFont.systemFont(ofSize: 23)
     
     /// messageLabelColor: Color of message label
-    public var messageLabelColor = UIColor(red: 43/255.0, green: 37/255.0, blue: 72/255.0, alpha: 1)
+    open var messageLabelColor = UIColor(red: 43/255.0, green: 37/255.0, blue: 72/255.0, alpha: 1)
     
     /// closeButtonImage: Success image
-    public var closeButtonImage = UIImage(named: "close-red", in: Bundle(for: EAAlert.self), compatibleWith: nil)
+    open var closeButtonImage = UIImage(named: "close-red", in: Bundle(for: EAAlert.self), compatibleWith: nil)
     
     /// successButtonImage: Success image
-    public var successButtonImage = UIImage(named: "success", in: Bundle(for: EAAlert.self), compatibleWith: nil)
+    open var successButtonImage = UIImage(named: "success", in: Bundle(for: EAAlert.self), compatibleWith: nil)
     
     /// errorButtonImage: Error image
-    public var errorButtonImage = UIImage(named: "error", in: Bundle(for: EAAlert.self), compatibleWith: nil)
+    open var errorButtonImage = UIImage(named: "error", in: Bundle(for: EAAlert.self), compatibleWith: nil)
     
     /// isPositiveButtonHidden: If you set as false, positive button will be visible
-    public var isPositiveButtonHidden = true
+    open var isPositiveButtonHidden = true
     
     /// isNegativeButtonHidden: If you set as false, negativfe button will be visible
-    public var isNegativeButtonHidden = true
+    open var isNegativeButtonHidden = true
     
     /// positiveButtonText: Posiive button text
-    public var positiveButtonText = "Yes"
+    open var positiveButtonText = "Yes"
     
     /// positiveButtonText: Negative button text
-    public var negativeButtonText = "No"
+    open var negativeButtonText = "No"
     
     /// positiveButtonTextColor: Positive button label color
-    public var positiveButtonTextColor = UIColor(red: 157/255.0, green: 37/255.0, blue: 41/255.0, alpha: 1)
+    open var positiveButtonTextColor = UIColor(red: 157/255.0, green: 37/255.0, blue: 41/255.0, alpha: 1)
     
     /// negativeButtonTextColor: Negative button label color
-    public var negativeButtonTextColor = UIColor(red: 157/255.0, green: 37/255.0, blue: 41/255.0, alpha: 1)
+    open var negativeButtonTextColor = UIColor(red: 157/255.0, green: 37/255.0, blue: 41/255.0, alpha: 1)
     
     /// messageLabelFont: Font of message label
-    public var positiveButtonTextFont = UIFont.boldSystemFont(ofSize: 20)
+    open var positiveButtonTextFont = UIFont.boldSystemFont(ofSize: 20)
     
     /// messageLabelFont: Font of message label
-    public var negativeButtonTextFont = UIFont.boldSystemFont(ofSize: 20)
+    open var negativeButtonTextFont = UIFont.boldSystemFont(ofSize: 20)
     
     // Click Events:
     
     /// onAlertCloseTapped: Called when alert closed.
-    public var onAlertCloseTapped: (()->(Void))?
+    open var onAlertCloseTapped: (()->(Void))?
     
     /// onPositiveButtonTapped: Called when positive button pressed.
-    public var onPositiveButtonTapped: (()->(Void))?
+    open var onPositiveButtonTapped: (()->(Void))?
     
     /// onNegativeButtonTapped: Called when negative button pressed.
-    public var onNegativeButtonTapped: (()->(Void))?
+    open var onNegativeButtonTapped: (()->(Void))?
     
     private var image: UIImage!
     private var labelCenterYAnchor: CGFloat = 0
@@ -103,7 +104,7 @@ open class EAAlert: UIView {
     }
     
     /// setMessage: You can update the alert message with using this function.
-    public func setMessage(_ message: String) {
+    open func setMessage(_ message: String) {
         _message = message
     }
     
