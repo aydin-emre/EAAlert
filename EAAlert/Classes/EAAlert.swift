@@ -8,29 +8,20 @@
 
 import UIKit
 
-/// messageType: none, success or error.
+/// messageType: none, success, information or error.
 public enum MessageType: Int {
     case none = 0
     case success
     case error
+    case information
 }
 
 open class EAAlert: UIView {
     
-    /// messageType: none, success or error. Changeable images available when success or error types selected.
+    /// messageType: none, success, information or error. Changeable images available when success, error or information types selected.
     public var messageType = MessageType.none {
         didSet {
-            switch messageType {
-            case MessageType.success:
-                labelCenterYAnchor = -25
-                image = successButtonImage
-            case MessageType.error:
-                labelCenterYAnchor = -25
-                image = errorButtonImage
-            case MessageType.none:
-                labelCenterYAnchor = 0
-                image = nil
-            }
+            setMessageType()
         }
     }
     
@@ -46,14 +37,29 @@ open class EAAlert: UIView {
     /// messageLabelColor: Color of message label
     open var messageLabelColor = UIColor(red: 43/255.0, green: 37/255.0, blue: 72/255.0, alpha: 1)
     
-    /// closeButtonImage: Success image
+    /// closeButtonImage: Close image
     open var closeButtonImage = UIImage(named: "close-red", in: Bundle(for: EAAlert.self), compatibleWith: nil)
     
     /// successButtonImage: Success image
-    open var successButtonImage = UIImage(named: "success", in: Bundle(for: EAAlert.self), compatibleWith: nil)
+    open var successButtonImage = UIImage(named: "success", in: Bundle(for: EAAlert.self), compatibleWith: nil) {
+        didSet {
+            setMessageType()
+        }
+    }
     
     /// errorButtonImage: Error image
-    open var errorButtonImage = UIImage(named: "error", in: Bundle(for: EAAlert.self), compatibleWith: nil)
+    open var errorButtonImage = UIImage(named: "error", in: Bundle(for: EAAlert.self), compatibleWith: nil) {
+        didSet {
+            setMessageType()
+        }
+    }
+    
+    /// informationButtonImage: Information image
+    open var informationButtonImage = UIImage(named: "information", in: Bundle(for: EAAlert.self), compatibleWith: nil) {
+        didSet {
+            setMessageType()
+        }
+    }
     
     /// isPositiveButtonHidden: If you set as false, positive button will be visible
     open var isPositiveButtonHidden = true
@@ -246,6 +252,27 @@ open class EAAlert: UIView {
                     window.addSubview(eaView)
                 }
             }
+        }
+    }
+    
+    private func setMessageType() {
+        switch messageType {
+        case MessageType.success:
+            labelCenterYAnchor = -25
+            image = successButtonImage
+            break
+        case MessageType.error:
+            labelCenterYAnchor = -25
+            image = errorButtonImage
+            break
+        case MessageType.information:
+            labelCenterYAnchor = -25
+            image = informationButtonImage
+            break
+        case MessageType.none:
+            labelCenterYAnchor = 0
+            image = nil
+            break
         }
     }
     
