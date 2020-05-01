@@ -61,6 +61,9 @@ open class EAAlert: UIView {
         }
     }
     
+    /// Distribution of positive and negative buttons
+    open var actionButtonsDistribution: UIStackView.Distribution = .equalSpacing
+    
     /// isPositiveButtonHidden: If you set as false, positive button will be visible
     open var isPositiveButtonHidden = true
     
@@ -215,7 +218,7 @@ open class EAAlert: UIView {
                 if isActionButtonsContainerViewVisible {
                     let actionButtonsContainerView = UIStackView()
                     actionButtonsContainerView.axis = .horizontal
-                    actionButtonsContainerView.distribution = .fillEqually
+                    actionButtonsContainerView.distribution = self.actionButtonsDistribution
                     contentView.addSubview(actionButtonsContainerView)
                     
                     actionButtonsContainerView.translatesAutoresizingMaskIntoConstraints = false

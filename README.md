@@ -51,6 +51,10 @@ Set message type as success, error or none. There will be icons if success or er
 ```swift
 alert.messageType = .success // .error or .none
 ```
+Set distribution of positive and negative buttons
+```swift
+alert.actionButtonsDistribution = .fillEqually
+```
 Set positive and negative button visibility
 ```swift
 alert.isPositiveButtonHidden = false // default true
