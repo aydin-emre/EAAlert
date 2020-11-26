@@ -108,7 +108,7 @@ open class EAAlert: UIView {
     private lazy var bundle: Bundle = Bundle(for: EAAlert.self)
     
     /// show: Call it whenever you want to show the alert.
-    public func show() {
+    open func show() {
         showAlert(_message)
     }
     
